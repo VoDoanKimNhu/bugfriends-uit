@@ -1,0 +1,72 @@
+<%- contentFor('head') %> 
+<link rel="stylesheet" href="/public/stylesheets/pages/discuss/all.css">
+<title>discuss</title>
+<%- contentFor('body') %> 
+<div class="container">
+  <h1>Thảo luận</h1>
+  <div class="container-fluid" id="main">
+    <div class="discussion-row">
+      <div class="col-left discussion-container">
+        <div class="top-bar bg-light">
+          <h2>Nơi giải đáp các thắc mắc liên quan tới lập trình</h2>
+          <div class="d-flex align-items-center justify-content-between">
+            <select name="" id="">
+              <option value="">Mới nhất</option>
+              <option value="">Nhiều lượt quan tâm</option>
+              <option value="">Nhiều lượt comments</option>
+            </select>
+            <div class="search-bar">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Nhập từ khóa..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Tìm kiếm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="discussion-posts-container">
+          <% for(let i = 0; i< 20; i++){ %>
+            <div class="discussion container-fluid">
+              <div class="row">
+                <div class="col-1">
+                  <div class="avatar"><i class="far fa-user"></i></div>
+                </div>
+                <div class="col-8">
+                  <h6><a href="/discusses/post">Lỗi Callback hell trong Javascript</a></h6>
+                  <p><i class="fas fa-calendar-alt"></i> Thứ 3 ngày 28 tháng 12 năm 2021</p>
+                  <div class="tag-container d-flex justify-content-start">
+                    <div class="tag">how</div>
+                    <div class="tag">What</div>
+                    <div class="tag">why</div>
+                  </div>
+                  <p>Callback hell là một lỗi hay gặp trong javascripts nhưng có thể khắc phục bằng cách dùng Promis hoặc async do Javascript cung cấp.</p>
+                </div>
+                <div class="col-3 count-box">
+                  <p><i class="far fa-comments"></i> 30 bình luận</p>
+                  <p><i class="far fa-thumbs-up"></i> 200 lượt thích</p>
+                </div>
+              </div>
+            </div>
+          <% } %> 
+        </div>
+      </div>
+      <div class="col-right">
+        <div>
+          <form action="/discusses/new" method="GET">
+            <button id="new-discuss-btn" type="submit">Đăng câu hỏi thảo luận</button>
+          </form>
+        </div>
+        <div class="trending-box">
+          <h3>Trending</h3>
+          <div class="hot-posts-container">
+            <ul>
+              <li><a href="#"><i class="far fa-clone"></i> Javascript or python</a></li>
+              <li><a href="#"><i class="far fa-clone"></i> Cài đặt các packages cần thiết trong ReactJS</a></li>
+              <li><a href="#"><i class="far fa-clone"></i> Cách Textalign trong xaml WPF</a></li>
+              <li><a href="#"><i class="far fa-clone"></i> Lỗi không cài đặt được nodemon</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>

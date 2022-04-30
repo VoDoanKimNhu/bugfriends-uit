@@ -1,0 +1,449 @@
+<%- contentFor("head") %>
+<title>Blog</title>
+<link rel="stylesheet" href="/public/stylesheets/pages/blog/homeblog.css" />
+
+<%- contentFor("body") %>
+<div class="container wrap">
+    <!-- row tiêu đề -->
+    <div class="row header">
+        <div class="col-sm-12">
+            <h2>BLOG</h2>
+        </div>
+    </div>
+    <!-- end row tiêu đề -->
+
+    <!-- row slide -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box-slide">
+                <div class="clip clip1">
+                    <div class="content">
+                        <h3>Blog của Bug-friends</h3>
+                        <p>Nơi chia sẻ tất tần tận về kiến thức, kinh nghiệm coding.</p>
+                    </div>
+                </div>
+                <div class="clip clip2">
+                    <div class="content">
+                        <h3>Blog của Bug-friends</h3>
+                        <p>Nơi chia sẻ tất tần tận về kiến thức, kinh nghiệm coding.</p>
+                    </div>
+                </div>
+                <div class="clip clip3">
+                    <div class="content">
+                        <h3>Blog của Bug-friends</h3>
+                        <p>Nơi chia sẻ tất tần tận về kiến thức, kinh nghiệm coding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end row slide -->
+    <!-- start row tap -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="navigation">
+                <ul>
+                    <li><a href="" class="filter" data-filter="all">Tất cả</a></li>
+                    <li><a href="" class="filter" data-filter="ltc">Kiến thức coding</a></li>
+                    <li><a href="" class="filter" data-filter="cd">Cơ hội nghề nghiệp</a></li>
+                    <li><a href="" class="filter" data-filter="is">Tầm nhìn</a></li>
+                    <li><a href="" class="filter" data-filter="cn">Công ty mới</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- row chính chứa bài viết -->
+    <div class="row list-post">
+        <a href="/blogs/posts/detail" class="col-sm-3 post_item cd">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img src="/public/assets/images/blog/js-item1.jpg" alt="" />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 17/10/2021</p>
+                        <p>Cơ hội nghề nghiệp</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Javascript đâu chỉ có console.log()</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span>
+                            <p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/blogs/posts/lo-trinh-JS" class="col-sm-3 post_item is">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img
+                        src="/public/assets/images/blog/js-item2.jpg"
+                        alt="Lộ trình tự học Javascript từ cơ bản đến nâng cao"
+                    />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 24/03/2022</p>
+                        <p>Kiến thức coding</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Lộ trình tự học Javascript từ cơ bản đến nâng cao</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span
+                            ><p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/blogs/posts/arrayJS" class="col-sm-3 post_item ltc">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img
+                        src="/public/assets/images/blog/js-item4.jpg"
+                        alt="Những điều cần biết về mảng trong javascript"
+                    />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 31/03/2021</p>
+                        <p>Kiến thức coding</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Những điều cần biết về mảng trong javascript</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span>
+                            <p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="col-sm-3 post_item cn">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img src="/public/assets/images/blog/js-item3.jpg" alt="" />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 17/10/2021</p>
+                        <p>Công ty mới</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Event Loop là gì?</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span>
+                            <p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="col-sm-3 post_item cd">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img src="/public/assets/images/blog/js-item3.jpg" alt="" />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 17/10/2021</p>
+                        <p>Cơ hội nghề nghiệp</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Event Loop là gì?</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span>
+                            <p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="col-sm-3 post_item ltc">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img src="/public/assets/images/blog/js-item3.jpg" alt="" />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 17/10/2021</p>
+                        <p>Kiến thức coding</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Event Loop là gì?</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span>
+                            <p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="col-sm-3 post_item cn">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img src="/public/assets/images/blog/htmlcss1.jpg" alt="" />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 17/10/2021</p>
+                        <p>Công ty mới</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Event Loop là gì?</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span>
+                            <p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="col-sm-3 post_item is">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img src="/public/assets/images/blog/abm1-1.jpg" alt="" />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 17/10/2021</p>
+                        <p>Tầm nhìn</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Event Loop là gì?</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span>
+                            <p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="col-sm-3 post_item cd">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img src="/public/assets/images/blog/abm1-2.jpg" alt="" />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 17/10/2021</p>
+                        <p>Cơ hội nghề nghiệp</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Event Loop là gì?</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span>
+                            <p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="col-sm-3 post_item is">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img src="/public/assets/images/blog/abm3-1.jpg" alt="" />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 17/10/2021</p>
+                        <p>Tầm nhìn</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Event Loop là gì?</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span>
+                            <p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="col-sm-3 post_item ltc">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img src="/public/assets/images/blog/htmlcss3.jpg" alt="" />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 17/10/2021</p>
+                        <p>Kiến thức coding</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Event Loop là gì?</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span>
+                            <p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="col-sm-3 post_item cn">
+            <div class="eachpost">
+                <div class="post_item-image">
+                    <img src="/public/assets/images/blog/abm2.png" alt="" />
+                </div>
+                <div class="post_item-content">
+                    <div class="post_item-conent-header">
+                        <p><i class="far fa-calendar-alt"></i> 17/10/2021</p>
+                        <p>Công ty mới</p>
+                    </div>
+                    <div class="post_item-content-body">
+                        <h5>Event Loop là gì?</h5>
+                        <p>...</p>
+                    </div>
+                    <div class="post_item-content-footer">
+                        <span
+                            ><p>400</p>
+                            <p><i class="fas fa-book-reader"></i></p
+                        ></span>
+                        <span
+                            ><p>310</p>
+                            <p><i class="far fa-eye"></i></p
+                        ></span>
+                        <span>
+                            <p>512</p>
+                            <p><i class="fas fa-comments"></i></p
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!-- end row chính chứa bài viết -->
+
+    <div class="row view-all-post">
+        <a href="/blogs/all-post?page=1" class="btn btn-primary" id="see_all_post">Xem tất cả bài viết.....</a>
+    </div>
+</div>
+<script src="/public/javascripts/filterBlog.js"></script>
